@@ -1,0 +1,72 @@
+html {
+    background-image: linear-gradient(#404040, green);
+    font-family: 'fantasy';
+    height: 100vh;
+}
+
+* {
+    margin: 0px;
+    text-decoration: none;
+    padding: 0px;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 10vw 80vw 10vw;
+    
+}
+nav {
+    background-color: yellowgreen;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    align-self: center;
+    text-align: right;
+}
+
+nav a {
+    color: black;
+    margin: 0px 1vw;
+}
+
+nav a:hover {
+    color: darkgreen;
+}
+
+.last {
+    margin-right: 10vw;
+}
+
+.logo {
+    width: 10%;
+    margin: 10px;
+    grid-column: 2/3;
+    grid-row: 1/2;     
+}
+
+section {
+  background-color: rgba(255,255,255,0.7);
+      grid-column: 2/3;
+    margin: 5vh 0px;
+    padding: 2vh 0px;
+    
+}
+
+h1 {
+    grid-column: 1/2;   
+}
+
+.snakes {
+    list-style: none;
+      display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(150px, 1fr));
+    grid-gap: 2%;
+    
+}
+
+.snakes img {
+  width: 100%;
+}
+
+.snakes li {
+    text-align:center;    
+}
